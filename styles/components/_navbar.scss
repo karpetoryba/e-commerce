@@ -1,0 +1,64 @@
+nav {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.navbar {
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+
+  &-item {
+    font-size: 1.5rem;
+    color: rgb(136, 136, 136);
+    position: relative;
+    padding-bottom: 15px;
+
+    &:hover,
+    &.active {
+      &::after,
+      &::before {
+        width: 50%;
+      }
+      a {
+        color: black;
+      }
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: black;
+      position: absolute;
+      bottom: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::after {
+      left: 50%;
+    }
+
+    &::before {
+      right: 50%;
+    }
+  }
+}
+
+.sidebar-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: red;
+  height: 100vh;
+  width: 300px;
+  transform: translateX(300px);
+  transition: all 0.3s ease-in-out;
+
+  &.show {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,14 @@
+$default-spacing: 1rem;
+$spacing-xs: $default-spacing/2;
+$spacing-sm: $default-spacing;
+$spacing-md: $default-spacing * 1.5;
+$spacing-lg: $default-spacing * 2;
+
+.m {
+  &t-0 {
+    margin-top: 0;
+  }
+  &t-xs {
+    margin-top: $spacing-xs;
+  }
+}

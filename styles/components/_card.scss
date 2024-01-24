@@ -1,0 +1,17 @@
+.card {
+  &-thumbnail {
+    height: 150px;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+  }
+  &-body {
+    padding: 1rem;
+  }
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(255, 192, 109);
+  }
+}
